@@ -1,2 +1,2 @@
 # yalltz
-Yalltz cli on dotnet core
+Yalltz (https://en.wikipedia.org/wiki/Yahtzee) cli on dotnet core
