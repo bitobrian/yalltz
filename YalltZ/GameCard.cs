@@ -39,5 +39,33 @@ namespace YalltZ
            
             return false;
         }
+
+        public int GetTotal()
+        {
+            int total = 0;
+
+            List<int> propList = new List<int>();
+            propList.Add(Ones);
+            propList.Add(Twos);
+            propList.Add(Threes);
+            propList.Add(Fours);
+            propList.Add(Fives);
+            propList.Add(Sixes);
+            propList.Add(ThreeOfAKind);
+            propList.Add(FourOfAKind);
+            propList.Add(SmallStraight);
+            propList.Add(LargeStraight);
+            propList.Add(FullHouse);
+            propList.Add(Yalltz);
+            propList.Add(Chance);
+
+            foreach(int i in propList)
+            {
+                if (i > 0)
+                    total += i;
+            }
+
+            return total;
+        }
     }
 }
