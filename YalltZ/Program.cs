@@ -14,7 +14,7 @@ namespace YalltZ
             List<Player> playerList = new List<Player>();
 
             playerList.Add(new Player("Tacos"));
-            playerList.Add(new Player("Ballz"));
+            playerList.Add(new Player("Beerz"));
 
             playerList[0].IsActive = true;
 
@@ -33,9 +33,6 @@ namespace YalltZ
                         WinConditionMet = true;
                 }
             }
-
-
-
         }
     }
 }
