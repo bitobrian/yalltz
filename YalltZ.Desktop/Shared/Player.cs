@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace YalltZ
+namespace YalltZ.Desktop.Shared
 {
-    class Player
+    public class Player
     {
         public string Name { get; set; }
         public GameCard GameCard = new GameCard();

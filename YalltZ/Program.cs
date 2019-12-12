@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using YalltZ.Desktop.Shared;
 
 namespace YalltZ
 {
@@ -7,14 +8,15 @@ namespace YalltZ
     {
         static bool WinConditionMet = false;
 
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("YalltZ!");
-            
-            List<Player> playerList = new List<Player>();
 
-            playerList.Add(new Player("Tacos"));
-            playerList.Add(new Player("Beerz"));
+            List<Player> playerList = new List<Player>
+            {
+                new Player("Tacos"),
+                new Player("Beerz")
+            };
 
             playerList[0].IsActive = true;
 

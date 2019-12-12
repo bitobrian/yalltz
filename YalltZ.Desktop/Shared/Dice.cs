@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace YalltZ
+namespace YalltZ.Desktop.Shared
 {
-    class Dice
+    public class Dice
     {
         public int Value { get; set; }
         public int MinValue = 1;

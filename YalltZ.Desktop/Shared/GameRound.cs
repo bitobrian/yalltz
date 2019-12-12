@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace YalltZ
+namespace YalltZ.Desktop.Shared
 {
-    class GameRound
+    public class GameRound
     {
         public Player P1;
         public Player P2;

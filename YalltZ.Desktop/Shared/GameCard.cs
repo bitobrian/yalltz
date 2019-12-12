@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace YalltZ
+namespace YalltZ.Desktop.Shared
 {
-    class GameCard
+    public class GameCard
     {
         public int Ones { get; set; } = -1;
         public int Twos { get; set; } = -1;
@@ -44,22 +42,24 @@ namespace YalltZ
         {
             int total = 0;
 
-            List<int> propList = new List<int>();
-            propList.Add(Ones);
-            propList.Add(Twos);
-            propList.Add(Threes);
-            propList.Add(Fours);
-            propList.Add(Fives);
-            propList.Add(Sixes);
-            propList.Add(ThreeOfAKind);
-            propList.Add(FourOfAKind);
-            propList.Add(SmallStraight);
-            propList.Add(LargeStraight);
-            propList.Add(FullHouse);
-            propList.Add(Yalltz);
-            propList.Add(Chance);
+            List<int> propList = new List<int>
+            {
+                Ones,
+                Twos,
+                Threes,
+                Fours,
+                Fives,
+                Sixes,
+                ThreeOfAKind,
+                FourOfAKind,
+                SmallStraight,
+                LargeStraight,
+                FullHouse,
+                Yalltz,
+                Chance
+            };
 
-            foreach(int i in propList)
+            foreach (int i in propList)
             {
                 if (i > 0)
                     total += i;
