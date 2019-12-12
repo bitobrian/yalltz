@@ -9,7 +9,6 @@ namespace YalltZ
         public Player P1;
         public Player P2;
         private int RollRound;
-        private int TurnCount = 0;
 
         public GameRound(Player player1, Player player2)
         {
@@ -35,8 +34,6 @@ namespace YalltZ
 
             while (RollRound < 3)
             {
-                string response = "";
-
                 StringBuilder currentDice = new StringBuilder();
 
                 // Roll Dice
@@ -51,7 +48,7 @@ namespace YalltZ
                 // Select Keepers
                 Console.WriteLine("Current Dice: " + currentDice);
                 Console.WriteLine("Type k for keep or r for roll in order - r k r r k");
-                response = Console.ReadLine();
+                var response = Console.ReadLine();
 
                 string[] responseSplit = response.Split(' ');
 
@@ -329,9 +326,6 @@ namespace YalltZ
 
         private int CheckFullHouse(Player player)
         {
-            bool threeoak = false;
-            bool twooak = false;
-
             // return 25 if conditions are met
             int ones = 0;
             int twos = 0;
@@ -359,8 +353,6 @@ namespace YalltZ
 
             if(ones==3 || twos == 3 || threes == 3 || fours == 3 || fives == 3 || sixes == 3)
             {
-                threeoak = true;
-
                 if (ones == 2 || twos == 2 || threes == 2 || fours == 2 || fives == 2 || sixes == 2)
                 {
                     return 25;
