@@ -14,5 +14,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\YalltZ.Desktop.Shared.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\js\dice.js" />
+  </ItemGroup>
 
 </Project>
