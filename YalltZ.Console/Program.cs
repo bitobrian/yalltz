@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using YalltZ.Shared;
 
-namespace YalltZ.Console
+namespace YalltZ.ConsoleApp
 {
     class Program
     {
