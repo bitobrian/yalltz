@@ -1,38 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace YalltZ.Shared
 {
     public class GameRound
     {
-        public Player P1;
-        public Player P2;
-        private int RollRound;
+        private readonly Player _player;
+        private readonly Player P2;
 
         public GameRound(Player player1, Player player2)
         {
-            P1 = player1;
+            _player = player1;
             P2 = player2;
-
-            RollRound = 0;
         }
 
         public void StartRound()
         {
-            RunRound(P1);
-
-            RollRound = 0;
-
+            RunRound(_player);
             RunRound(P2);
         }
 
         private void RunRound(Player player)
         {
+            int rollCount = 3;
+
             Console.Clear();
             Console.WriteLine("Player " + player.Name+"'s turn!\n");
 
-            while (RollRound < 3)
+            while (rollCount > 0)
             {
                 StringBuilder currentDice = new StringBuilder();
 
@@ -57,11 +52,7 @@ namespace YalltZ.Shared
                     player.Dice[i].Hold = !responseSplit[i].ToLower().Equals("r");
                 }
 
-                // increment RollRound
-                RollRound++;
-
-                if (RollRound == 3)
-                    break;
+                rollCount--;
             }
 
             // Show possibilities and decide a score

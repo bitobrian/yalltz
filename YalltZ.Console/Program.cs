@@ -33,8 +33,7 @@ namespace YalltZ.ConsoleApp
 
                 foreach (Player p in playerList)
                 {
-                    if (p.GameCard.CheckWin())
-                        WinConditionMet = true;
+                    WinConditionMet = p.GameCard.HasWon();
                 }
             }
         }

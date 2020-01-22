@@ -18,7 +18,7 @@ namespace YalltZ.Shared
         public int Yalltz { get; set; } = -1;
         public int Chance { get; set; } = -1;
 
-        public bool CheckWin()
+        public bool HasWon()
         {
             if (Ones != -1 &&
                 Twos != -1 &&
