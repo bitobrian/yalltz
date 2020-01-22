@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YalltZ.Shared", "YalltZ.Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YalltZ.Web", "YalltZ.Web\YalltZ.Web.csproj", "{51964731-0FE7-496F-B636-B241227DC4C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalltZ.Tests", "YalltZ.Tests\YalltZ.Tests.csproj", "{B1BD41A9-C7F2-448B-8E43-4353C0F3E852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YalltZ.Tests", "YalltZ.Tests\YalltZ.Tests.csproj", "{B1BD41A9-C7F2-448B-8E43-4353C0F3E852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YalltZ.SSR", "YalltZ.SSR\YalltZ.SSR.csproj", "{8C72A66A-D926-4804-9A39-C6F415CA7CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B1BD41A9-C7F2-448B-8E43-4353C0F3E852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1BD41A9-C7F2-448B-8E43-4353C0F3E852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1BD41A9-C7F2-448B-8E43-4353C0F3E852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C72A66A-D926-4804-9A39-C6F415CA7CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C72A66A-D926-4804-9A39-C6F415CA7CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C72A66A-D926-4804-9A39-C6F415CA7CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C72A66A-D926-4804-9A39-C6F415CA7CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
